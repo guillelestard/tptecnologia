@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Actividades Extracurriculares</title>
+    <link rel="stylesheet" href="tp.css">
+    <script src="tp.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Actividades Escolares</div>
+            <ul>
+                <li><a href="https://guillelestard.neocities.org/trabajo%20problematica/listaactividades">Actividades</a></li>
+                <li><a href="#register">Inscribirse</a></li>
+                <li><a href="#about">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="activities">
+            <h2>Actividades Disponibles</h2>
+            <div class="activity-list">
+                <div class="activity-card">
+                    <h3>Taller de Robótica</h3>
+                    <p>Aprende a construir y programar robots.</p>
+                    <button class="register-btn">Inscribirse</button>
+                </div>
+                <div class="activity-card">
+                    <h3>Club de Ciencias</h3>
+                    <p>Explora el mundo de la ciencia a través de experimentos.</p>
+                    <button class="register-btn">Inscribirse</button>
+                </div>
+                <div class="activity-card">
+                    <h3>Deportes en Equipo</h3>
+                    <p>Únete a nuestro equipo de fútbol o baloncesto.</p>
+                    <button class="register-btn">Inscribirse</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="register">
+            <h2>Inscribirse en una Actividad</h2>
+            <form id="registration-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" required>
+
+                <label for="activity">Actividad:</label>
+                <select id="activity" required>
+                    <option value="" disabled selected>Selecciona una actividad</option>
+                    <option value="robotica">Taller de Robótica</option>
+                    <option value="ciencias">Club de Ciencias</option>
+                    <option value="deportes">Deportes en Equipo</option>
+                </select>
+
+                <button type="submit">Inscribirse</button>
+            </form>
+        </section>
+
+        <section id="about">
+            <h2>Acerca de</h2>
+            <p>Esta plataforma facilita la gestión y promoción de actividades extracurriculares en instituciones educativas.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Actividades Escolares. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
